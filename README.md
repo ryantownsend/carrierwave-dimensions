@@ -1,12 +1,12 @@
 # CarrierwaveDimensions
 
-TODO: Write a gem description
+Stores the dimensions of an image after uploading. Individual versions can be stored with different columns in the database.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'carrierwave_dimensions'
+    gem 'carrierwave-dimensions'
 
 And then execute:
 
@@ -14,11 +14,18 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install carrierwave_dimensions
+    $ gem install carrierwave-dimensions
 
 ## Usage
 
-TODO: Write usage instructions here
+    class MyUploader < CarrierWave::Uploader::Base
+    
+      version :thumbnail do
+        process resize_to_fill: [500, 500]
+        process :store_dimensions
+      end
+    
+    end
 
 ## Contributing
 
