@@ -1,6 +1,6 @@
 # CarrierwaveDimensions
 
-Stores the dimensions of an image after uploading. Individual versions can be stored with different columns in the database.
+Stores the dimensions of an image when uploading. Individual versions can be stored with different columns in the database.
 
 ## Installation
 

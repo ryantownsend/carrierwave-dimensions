@@ -5,10 +5,10 @@ Gem::Specification.new do |s|
   s.authors       = ["Ryan Townsend"]
   s.email         = ["ryan@ryantownsend.co.uk"]
   s.description   = %q{
-    Stores the dimensions of an image after uploading.
+    Stores the dimensions of an image when uploading.
     Individual versions can be stored with different columns in the database.
   }
-  s.summary       = %q{Stores the dimensions of an image after uploading}
+  s.summary       = %q{Stores the dimensions of an image when uploading}
   s.homepage      = "https://github.com/ryantownsend/carrierwave-dimensions"
 
   s.files         = `git ls-files`.split($\)
