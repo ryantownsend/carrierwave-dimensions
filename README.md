@@ -23,6 +23,11 @@ Or install it yourself as:
       version :thumbnail do
         process resize_to_fill: [500, 500]
         process :store_dimensions
+        process :store_dimensions, columns: "thumbnail"
+        process :store_dimensions, {
+          width_column: "thumbnail_width",
+          height_column: "thumbnail_height"
+        }
       end
     
     end

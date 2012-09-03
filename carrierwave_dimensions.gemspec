@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_dependency "carrierwave"
   s.add_development_dependency "rspec"
   s.add_development_dependency "mini_magick"
+  s.add_development_dependency "simplecov"
 end
